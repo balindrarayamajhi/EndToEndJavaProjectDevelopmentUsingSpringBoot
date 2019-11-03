@@ -1,0 +1,36 @@
+2019-09-28 16:39:53.837  INFO 1093 --- [main] c.b.f.FlightreservatationApplication     : Starting FlightreservatationApplication on Balindras-MBP.fios-router.home with PID 1093 (/Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation/target/classes started by balindrarayamajhi in /Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation)
+2019-09-28 16:39:53.839  INFO 1093 --- [main] c.b.f.FlightreservatationApplication     : No active profile set, falling back to default profiles: default
+2019-09-28 16:39:54.303  INFO 1093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-28 16:39:54.352  INFO 1093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 4 repository interfaces.
+2019-09-28 16:39:54.564  INFO 1093 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8ced69b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-28 16:39:54.760  INFO 1093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2019-09-28 16:39:54.778  INFO 1093 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 16:39:54.778  INFO 1093 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-28 16:39:54.920  INFO 1093 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-28 16:39:54.924  INFO 1093 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 16:39:54.924  INFO 1093 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1061 ms
+2019-09-28 16:39:55.047  INFO 1093 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-28 16:39:55.121  INFO 1093 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-28 16:39:55.239  INFO 1093 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-28 16:39:55.277  INFO 1093 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-09-28 16:39:55.278  INFO 1093 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-28 16:39:55.352  INFO 1093 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-28 16:39:55.429  INFO 1093 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-09-28 16:39:55.875  INFO 1093 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 16:39:56.056  INFO 1093 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-28 16:39:56.361  INFO 1093 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 16:39:56.386  WARN 1093 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-28 16:39:56.432  INFO 1093 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-09-28 16:39:56.525  INFO 1093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path '/flightreservation'
+2019-09-28 16:39:56.527  INFO 1093 --- [main] c.b.f.FlightreservatationApplication     : Started FlightreservatationApplication in 2.929 seconds (JVM running for 3.366)
+2019-09-28 16:40:20.305  INFO 1093 --- [http-nio-9001-exec-4] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 16:40:20.305  INFO 1093 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 16:40:20.312  INFO 1093 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-09-28 16:40:20.344  INFO 1093 --- [http-nio-9001-exec-4] c.b.f.controller.UserController          : Inside userRegistration method({})User [id=0, firstname=null, lastname=null, email=null, password=null]
+2019-09-28 16:44:11.812  INFO 1093 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-28 16:44:11.816  INFO 1093 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-28 16:44:11.817  INFO 1093 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 16:44:11.820  INFO 1093 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-28 16:44:11.823  INFO 1093 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

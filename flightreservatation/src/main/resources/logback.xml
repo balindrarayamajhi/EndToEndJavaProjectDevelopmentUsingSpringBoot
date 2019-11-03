@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<property name="LOG_DIR"
+		value="/Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation/src/main/resources/static/log" />
+
+	<property name="FILE_PREFIX" value="flightreservation" />
+
+	<appender name="FILE_OUT"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+		<file>${LOG_DIR}/${FILE_PREFIX}.log</file>
+
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+
+			<!-- the archived log file will be stored in the directory provided in 
+				file pattern -->
+			<fileNamePattern>${LOG_DIR}/archived/${FILE_PREFIX}_%d{yyyy-MM-dd}_%i.log
+			</fileNamePattern>
+
+			<!-- %i- adds the index starts from 0 by Logback -->
+
+
+			<!-- RollingPolicy – which determines how the rollover is performed TrigerringPolicy 
+				– which determines when the file is rolled over The TimeBasedRollingPolicy 
+				implements both a RollingPolicy and a TriggeringPolicy. -->
+
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+
+			<!-- by Default this policy will be triggered in every 24 hours or file 
+				size exceeds than 10 MB at that point the logger will archive the current 
+				logging file i.e flightreservation.log into the ${LOG_DIR}/archived/ folder 
+				using ${FILE_PREFIX}.%d{yyyy-MM-dd}.%i.log pattern -->
+		</rollingPolicy>
+	</appender>
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+		</encoder>
+		<target>System.out</target>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="FILE_OUT" />
+
+	</root>
+	
+	<root level="error">
+
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

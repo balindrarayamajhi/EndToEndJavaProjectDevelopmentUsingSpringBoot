@@ -1,0 +1,168 @@
+2019-09-28 21:52:46 - Starting FlightreservatationApplication on Balindras-MBP.fios-router.home with PID 1345 (/Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation/target/classes started by balindrarayamajhi in /Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation)
+2019-09-28 21:52:46 - No active profile set, falling back to default profiles: default
+2019-09-28 21:52:47 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-28 21:52:47 - Finished Spring Data repository scanning in 64ms. Found 4 repository interfaces.
+2019-09-28 21:52:47 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a5223cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-28 21:52:47 - Tomcat initialized with port(s): 9001 (http)
+2019-09-28 21:52:47 - Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-28 21:52:47 - Starting service [Tomcat]
+2019-09-28 21:52:47 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-28 21:52:48 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-28 21:52:48 - Initializing Spring embedded WebApplicationContext
+2019-09-28 21:52:48 - Root WebApplicationContext: initialization completed in 1582 ms
+2019-09-28 21:52:48 - HikariPool-1 - Starting...
+2019-09-28 21:52:48 - HikariPool-1 - Start completed.
+2019-09-28 21:52:48 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-28 21:52:48 - HHH000412: Hibernate Core {5.3.9.Final}
+2019-09-28 21:52:48 - HHH000206: hibernate.properties not found
+2019-09-28 21:52:48 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-28 21:52:48 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-09-28 21:52:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 21:52:50 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-28 21:52:50 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 21:52:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-28 21:52:50 - Adding welcome page: ServletContext resource [/index.html]
+2019-09-28 21:52:50 - Starting ProtocolHandler ["http-nio-9001"]
+2019-09-28 21:52:50 - Tomcat started on port(s): 9001 (http) with context path '/flightreservation'
+2019-09-28 21:52:50 - Started FlightreservatationApplication in 4.79 seconds (JVM running for 5.327)
+2019-09-28 21:53:14 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 21:53:14 - Initializing Servlet 'dispatcherServlet'
+2019-09-28 21:53:14 - Completed initialization in 9 ms
+2019-09-28 21:53:14 - Inside userRegistration method({})User [id=0, firstname=null, lastname=null, email=null, password=null]
+2019-09-28 21:54:06 - Inside the login method() with username: rejina@exe.com and password rejina) 
+2019-09-28 21:54:25 - Inside findFlight() method from : AUS to :NYC and departure date :Mon Feb 05 00:00:00 EST 2018
+2019-09-28 21:54:25 - Flights found are [Flight [id=1, fightnumber=AA1, operatingAirline=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [id=2, fightnumber=AA2, operatingAirline=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [id=3, fightnumber=AA3, operatingAirline=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-09-28 21:54:28 - Inside showReservation() method - flightId :4 and reservationrequest :ReservationRequest [flightId=4, passengerfirstname=null, passengerlastname=null, passengeremail=null, passengerphone=null, nameoncard=null, expiredate=null]
+2019-09-28 21:54:28 - Flight is Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]
+2019-09-28 21:55:17 - Inside completeReservation() method - reservationrequest :ReservationRequest [flightId=4, passengerfirstname=Rejina, passengerlastname=Shrestha, passengeremail=rmjbali2016@gmail.com, passengerphone=1234567890, nameoncard=, expiredate=]
+2019-09-28 21:55:17 - Inside  bookFLight()
+2019-09-28 21:55:17 - Fetching Flight for Flightd : 4
+2019-09-28 21:55:17 - Saving Passenger  : Passenger [id=0, firstname=Rejina, lastname=Shrestha, email=rmjbali2016@gmail.com, phone=1234567890]
+2019-09-28 21:55:17 - Saving reservation Reservation [ id=0, checkedin=false, numberofbags=0, passenger=Passenger [id=6, firstname=Rejina, lastname=Shrestha, email=rmjbali2016@gmail.com, phone=1234567890], flight=Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-09-28 21:55:17 - Generating the itineraryReservation [ id=6, checkedin=false, numberofbags=0, passenger=Passenger [id=6, firstname=Rejina, lastname=Shrestha, email=rmjbali2016@gmail.com, phone=1234567890], flight=Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-09-28 21:55:17 - Emailing the itineraryReservation [ id=6, checkedin=false, numberofbags=0, passenger=Passenger [id=6, firstname=Rejina, lastname=Shrestha, email=rmjbali2016@gmail.com, phone=1234567890], flight=Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-09-28 21:55:17 - Inside sendItinerary() method
+2019-09-28 21:55:20 - Returned : Reservation [ id=6, checkedin=false, numberofbags=0, passenger=Passenger [id=6, firstname=Rejina, lastname=Shrestha, email=rmjbali2016@gmail.com, phone=1234567890], flight=Flight [id=4, fightnumber=SW1, operatingAirline=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-09-28 21:58:57 - Application shutdown requested.
+2019-09-28 21:58:57 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-28 21:58:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 21:58:57 - HikariPool-1 - Shutdown initiated...
+2019-09-28 21:58:57 - HikariPool-1 - Shutdown completed.
+2019-09-28 21:59:06 - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.ConsoleAppender[STDOUT] - No encoder set for the appender named "STDOUT".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.balindra.flightreservatation.FlightreservatationApplication.main(FlightreservatationApplication.java:10)
+2019-09-28 21:59:56 - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.ConsoleAppender[STDOUT] - No encoder set for the appender named "STDOUT".
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:64 - no applicable action for [encoder], current ElementPath  is [[configuration][root][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:13 - no applicable action for [pattern], current ElementPath  is [[configuration][root][encoder][pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.balindra.flightreservatation.FlightreservatationApplication.main(FlightreservatationApplication.java:10)
+2019-09-28 22:00:46 - Starting FlightreservatationApplication on Balindras-MBP.fios-router.home with PID 1412 (/Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation/target/classes started by balindrarayamajhi in /Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation)
+2019-09-28 22:00:46 - No active profile set, falling back to default profiles: default
+2019-09-28 22:00:46 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-28 22:00:46 - Finished Spring Data repository scanning in 47ms. Found 4 repository interfaces.
+2019-09-28 22:00:47 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7aaf375c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-28 22:00:47 - Tomcat initialized with port(s): 9001 (http)
+2019-09-28 22:00:47 - Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-28 22:00:47 - Starting service [Tomcat]
+2019-09-28 22:00:47 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-28 22:00:47 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-28 22:00:47 - Initializing Spring embedded WebApplicationContext
+2019-09-28 22:00:47 - Root WebApplicationContext: initialization completed in 1104 ms
+2019-09-28 22:00:47 - HikariPool-1 - Starting...
+2019-09-28 22:00:47 - HikariPool-1 - Start completed.
+2019-09-28 22:00:47 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-28 22:00:47 - HHH000412: Hibernate Core {5.3.9.Final}
+2019-09-28 22:00:47 - HHH000206: hibernate.properties not found
+2019-09-28 22:00:47 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-28 22:00:48 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-09-28 22:00:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 22:00:48 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-28 22:00:48 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 22:00:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-28 22:00:49 - Adding welcome page: ServletContext resource [/index.html]
+2019-09-28 22:00:49 - Starting ProtocolHandler ["http-nio-9001"]
+2019-09-28 22:00:49 - Tomcat started on port(s): 9001 (http) with context path '/flightreservation'
+2019-09-28 22:00:49 - Started FlightreservatationApplication in 2.942 seconds (JVM running for 3.445)
+2019-09-28 22:01:18 - Application shutdown requested.
+2019-09-28 22:01:18 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-28 22:01:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 22:01:18 - HikariPool-1 - Shutdown initiated...
+2019-09-28 22:01:18 - HikariPool-1 - Shutdown completed.
+2019-09-28 22:01:26 - Starting FlightreservatationApplication on Balindras-MBP.fios-router.home with PID 1417 (/Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation/target/classes started by balindrarayamajhi in /Users/balindrarayamajhi/SpringandHibernate/EndToEndJavaProjectDevelopmentUsingSpringBoot/flightreservatation)
+2019-09-28 22:01:26 - No active profile set, falling back to default profiles: default
+2019-09-28 22:01:27 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-28 22:01:27 - Finished Spring Data repository scanning in 47ms. Found 4 repository interfaces.
+2019-09-28 22:01:27 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$504b6e8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-28 22:01:27 - Tomcat initialized with port(s): 9001 (http)
+2019-09-28 22:01:27 - Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-28 22:01:27 - Starting service [Tomcat]
+2019-09-28 22:01:27 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-28 22:01:27 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-28 22:01:27 - Initializing Spring embedded WebApplicationContext
+2019-09-28 22:01:27 - Root WebApplicationContext: initialization completed in 1070 ms
+2019-09-28 22:01:27 - HikariPool-1 - Starting...
+2019-09-28 22:01:28 - HikariPool-1 - Start completed.
+2019-09-28 22:01:28 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-28 22:01:28 - HHH000412: Hibernate Core {5.3.9.Final}
+2019-09-28 22:01:28 - HHH000206: hibernate.properties not found
+2019-09-28 22:01:28 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-28 22:01:28 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-09-28 22:01:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 22:01:28 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-28 22:01:29 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 22:01:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-28 22:01:29 - Adding welcome page: ServletContext resource [/index.html]
+2019-09-28 22:01:29 - Starting ProtocolHandler ["http-nio-9001"]
+2019-09-28 22:01:29 - Tomcat started on port(s): 9001 (http) with context path '/flightreservation'
+2019-09-28 22:01:29 - Started FlightreservatationApplication in 2.873 seconds (JVM running for 3.414)
+2019-09-28 22:02:15 - Application shutdown requested.
+2019-09-28 22:02:15 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-28 22:02:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-28 22:02:15 - HikariPool-1 - Shutdown initiated...
+2019-09-28 22:02:15 - HikariPool-1 - Shutdown completed.
